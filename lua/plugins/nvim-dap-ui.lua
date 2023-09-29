@@ -8,11 +8,15 @@ return {
       dapui.open()
     end
     dap.listeners.before.event_terminated["dapui_config"] = function()
-      vim.defer_fn(function() vim.cmd("Neotree show") end, 10)
+      vim.defer_fn(function() 
+        vim.cmd("Neotree show")
+      end, 10)
       dapui.close()
     end
     dap.listeners.before.event_exited["dapui_config"] = function()
-      vim.defer_fn(function() vim.cmd("Neotree show") end, 10)
+      vim.defer_fn(function() 
+        vim.cmd("Neotree show") 
+      end, 10)
       dapui.close()
     end
   end
