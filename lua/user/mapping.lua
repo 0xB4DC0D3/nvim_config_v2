@@ -70,3 +70,6 @@ setkey('t', '<F7>', '<cmd>ToggleTerm direction=float<CR>', { noremap = true, sil
 
 -- Symbols Outline
 setkey('n', '<F4>', '<cmd>SymbolsOutline<CR>', { noremap = true, silent = true, desc = '[Symbols] Toggle symbols table' })
+
+-- Trouble.nvim
+setkey('n', '<F3>', '<cmd>TroubleToggle<CR>', { noremap = true, silent = true, desc = '[Trouble] Toggle troubles list' })
