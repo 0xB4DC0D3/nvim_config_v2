@@ -26,6 +26,7 @@ opt.showcmd = true
 opt.cmdheight = 1
 opt.clipboard:append({ "unnamed", "unnamedplus" })
 opt.signcolumn = "yes"
+opt.fillchars = "eob: "
 
 diagnostic.config({
   severity_sort = true

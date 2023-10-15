@@ -1,8 +1,8 @@
 return {
-	"navarasu/onedark.nvim",
-  opts = {},
-  lazy = false,
-	config = function()
-		require("onedark").load()
-	end
+  "projekt0n/github-nvim-theme",
+  config = function()
+    require('github-theme').setup({})
+
+    vim.cmd('colorscheme github_dark')
+  end
 }
