@@ -61,7 +61,7 @@ setkey('n', '<C-k>', vim.lsp.buf.signature_help, opts)
 setkey('n', '<leader>D', vim.lsp.buf.type_definition, opts)
 setkey('n', '<leader>rn', vim.lsp.buf.rename, opts)
 setkey({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, opts)
-setkey('n', 'gr', vim.lsp.buf.references, opts)
+setkey('n', 'gr', function() require("telescope.builtin").lsp_references() end, opts)
 setkey('n', '<leader>sd', function() require("telescope.builtin").diagnostics() end, opts)
 
 -- ToggleTerm

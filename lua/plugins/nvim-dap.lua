@@ -35,7 +35,6 @@ return {
           type = "codelldb",
           request = "launch",
           program = function()
-            vim.fn.system({ "cargo", "build" })
             return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/target/debug/', 'file')
           end,
           cwd = '${workspaceFolder}',
@@ -45,7 +44,6 @@ return {
           type = "codelldb",
           request = "launch",
           program = function()
-            vim.fn.system({ "cargo", "test" })
             return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/target/debug/', 'file')
           end,
           cwd = '${workspaceFolder}',
