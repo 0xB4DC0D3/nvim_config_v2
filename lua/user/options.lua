@@ -23,10 +23,10 @@ opt.wrap = false
 opt.backspace = "indent,eol,start"
 opt.termguicolors = true
 opt.showcmd = true
-opt.cmdheight = 1
+opt.cmdheight = 0
 opt.clipboard:append({ "unnamed", "unnamedplus" })
 opt.signcolumn = "yes"
-opt.fillchars = "eob: "
+opt.fillchars = "eob: ,diff:╱"
 
 diagnostic.config({
   severity_sort = true
