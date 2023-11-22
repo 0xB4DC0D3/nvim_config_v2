@@ -4,7 +4,7 @@ return {
   config = function()
     require("barbar").setup({
       sidebar_filetypes = {
-        ["neo-tree"] = { text = "File Explorer", event = "BufWipeout" }
+        ["neo-tree"] = { text = nil, event = "BufWipeout" }
       }
     })
   end
