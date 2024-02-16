@@ -6,7 +6,7 @@ return {
     require("ibl").setup({
       indent = {
         char = '▏',
-        highlight = "Whitespace",
+        highlight = "WinSeparator",
       },
       scope = {
         enabled = true,

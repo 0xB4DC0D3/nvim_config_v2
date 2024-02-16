@@ -19,8 +19,8 @@ setkey("n", "ss", "<cmd>split<CR>", { noremap = true, silent = true, desc = "Spl
 setkey("n", "sv", "<cmd>vsplit<CR>", { noremap = true, silent = true, desc = "Split window vertically" })
 
 -- Neo-tree
-setkey("n", "<leader>e", "<cmd>Neotree toggle<CR>", { noremap = true, silent = true, desc = "[Neo-tree] Toggle" })
-setkey("n", "<leader>o", "<cmd>Neotree focus<CR>", { noremap = true, silent = true, desc = "[Neo-tree] Focus" })
+setkey("n", "<leader>o", "<cmd>Neotree toggle<CR>", { noremap = true, silent = true, desc = "[Neo-tree] Toggle" })
+setkey("n", "<leader>e", "<cmd>Neotree focus<CR>", { noremap = true, silent = true, desc = "[Neo-tree] Focus" })
 
 -- Telescope
 setkey("n", "<leader>ff", function() require("telescope.builtin").find_files() end, { noremap = true, silent = true, desc = "[Telescope] Find files" })
@@ -29,8 +29,8 @@ setkey("n", "<leader>fg", function() require("telescope.builtin").live_grep() en
 -- Bufferline
 setkey("n", ",", "<cmd>BufferPrevious<CR>", { noremap = true, silent = true, desc = "[Barbar] Navigate to previous tab" })
 setkey("n", ".", "<cmd>BufferNext<CR>", { noremap = true, silent = true, desc = "[Barbar] Navigate to next tab" })
-setkey("n", "<", "<cmd>BufferMovePrevious<CR>", { noremap = true, silent = true, desc = "[Barbar] Move tab to left" })
-setkey("n", ">", "<cmd>BufferMoveNext<CR>", { noremap = true, silent = true, desc = "[Barbar] Move tab to right" })
+-- setkey("n", "<", "<cmd>BufferMovePrevious<CR>", { noremap = true, silent = true, desc = "[Barbar] Move tab to left" })
+-- setkey("n", ">", "<cmd>BufferMoveNext<CR>", { noremap = true, silent = true, desc = "[Barbar] Move tab to right" })
 setkey("n", "<A-1>", "<cmd>BufferGoto 1<CR>", { noremap = true, silent = true, desc = "[Barbar] Goto 1 tab" })
 setkey("n", "<A-2>", "<cmd>BufferGoto 2<CR>", { noremap = true, silent = true, desc = "[Barbar] Goto 2 tab" })
 setkey("n", "<A-3>", "<cmd>BufferGoto 3<CR>", { noremap = true, silent = true, desc = "[Barbar] Goto 3 tab" })
